@@ -1,0 +1,15 @@
+{
+  "name": "utility",
+  "version": "1.0.0",
+  "description": "some random stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "w33d",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3",
+    "truffle": "^5.8.4"
+  }
+}
