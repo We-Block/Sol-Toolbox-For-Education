@@ -1,11 +1,15 @@
 // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 contract EthereumBridge is Ownable {
-    CrossChainToken public token;
+    IERC20 public token;
     uint256 public nonce;
 
     event Locked(address indexed sender, uint256 amount, uint256 targetChainNonce);
 
-    constructor(CrossChainToken _token) {
+    constructor(IERC20 _token) {
         token = _token;
     }
 
